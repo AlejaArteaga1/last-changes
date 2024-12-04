@@ -1,0 +1,49 @@
+#loadingoverlay {
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    /* Cubre toda la pantalla */
+    top: 0;
+    /* Empieza en la parte superior */
+    left: 0;
+    /* Empieza en la esquina izquierda */
+    width: 100%;
+    /* Cubre todo el ancho de la ventana */
+    height: 100%;
+    /* Cubre todo el alto de la ventana */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo negro semi-transparente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    z-index: 1000;
+    /* Lo coloca encima de otros elementos */
+}
+
+.spinner {
+    width: 50px;
+    /* Tamaño del círculo */
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    /* Borde externo translúcido */
+    border-top: 5px solid white;
+    /* Borde superior blanco para el efecto de giro */
+    border-radius: 50%;
+    /* Hace que sea un círculo */
+    animation: spin 1s linear infinite;
+    /* Aplica una animación de giro */
+}
+
+@keyframes spin {
+
+    from {
+        transform: rotate(0deg);
+        /* Comienza sin rotación */
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* Gira 360 grados */
+    }
+}
