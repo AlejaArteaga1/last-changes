@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackpot21 - Account</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="video-bg">
+        <video autoplay muted loop id="background-video">
+            <source src="/images/casino-background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+    </div>
+    <div class="content">
+        <header>
+            <nav>
+                <div class="logo">Jackpot21</div>
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li id="playBtnNav"><a href="/webpages/blackjack.html">Play</a></li>
+                    <li><a href="/webpages/account.html">Account</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <main id="accountMain">
+
+        <div id="accountDetails" style="display: none;">
+            <h2>Your Account</h2>
+            <p>Welcome, <span id="usernameDisplay"></span>!</p>
+            <img id="patientImage" src="default player image" width="215">
+            <p>Email: <span id="emailDisplay"></span></p>
+            <p>Coins: <span id="coinsDisplay"></span></p>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+        <!-- Sign In Form (shown by default if not signed in) -->
+        <div id="signInForm" style="display: none;">
+            <h2>Sign In</h2>
+            <div class="formgroup">
+                <label for="signInUsername">Username or Email:</label>
+                <input type="text" id="signInUsername" placeholder="Enter Username or Email"><br>
+            </div>
+            <div class="formgroup">
+                <label for="signInPassword">Password:</label>
+                <input type="password" id="signInPassword" placeholder="Enter Password"><br>
+            </div>
+            <button id="signInSubmit">Submit</button>
+            <button id="registerBtn">Register</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <span id="bottomnav">
+        <div id="help">
+            <h3>Help</h3>
+        </div>
+        <div id="terms">
+            <h3>Terms</h3>
+        </div>
+        <div id="qna">
+            <h3>Frequent Q&A</h3>
+        </div>
+        <div id="quicklinks">
+            <h3>Quick Links</h3>
+        </div>
+        </span>
+        <p id="copyright">Copyright &copy; Jackpot 21</p>
+    </footer>
+</div>
+
+    <script src="/js/account.js"></script>
+</body>
+
+</html>
